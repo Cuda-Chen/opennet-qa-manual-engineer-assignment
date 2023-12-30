@@ -115,7 +115,7 @@
     - arcsin(1.001) ?= (something invalid)
 - arccos
     - arccos(-1) ?= pi
-    - arccos(1) ?= pi
+    - arccos(1) ?= 0
     - arccos(-2) ?= (something invalid)
     - arccos(1.001) ?= (something invalid) 
 - arctan
@@ -141,6 +141,29 @@
 
 - The top-left corner should flash "DEG"
 - (4 / 5) * -3 ?= -2.4
+
+### DEG
+
+- sin
+    - sin(0) ?= 0
+    - sin(30) ?= 0.5
+- cos
+    - cos(60) ?= 0.5
+    - cos(90) ?= 0
+- tan
+    - tan(45) ?= 1
+    - tan(90) ?= INF
+- arcsin
+    - arcsin(-1) ?= -90
+    - arcsin(1) ?= 90
+    - arcsin(-2) ?= (something invalid)
+- arccos
+    - arccos(-1) ?= 180
+    - arccos(1) ?= 0
+    - arccos(1.001) ?= (something invalid) 
+- arctan
+    - arctan(-1) ?= -45 
+    - arctan(1) ?= 45 
 
 ### MISC
 
