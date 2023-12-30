@@ -169,3 +169,12 @@
 
 - clear (C)
 - backspace
+
+## Problems I found
+
+- 0^0
+    - Get 1. Should be "(something invalid)"
+- 10^(10^10)
+    - Get timeout. Should get 10^1000
+- 10^(10^10)
+    - Get timeout. Should get 10^100
