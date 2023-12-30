@@ -47,7 +47,7 @@
     - cos(2 pi) ?= 1
 - tan
     - tan(0) ?= 0
-    - tan(pi / 2) ?= (something invalid)
+    - tan(pi / 2) ?= INF
     - tan(pi) ?= 0
     - tan(2 pi) ?= 0
 - ln
@@ -109,9 +109,18 @@
 ### INV
 
 - arcsin
-    - 
+    - arcsin(-1) ?= - pi / 2
+    - arcsin(1) ?= pi / 2
+    - arcsin(-2) ?= (something invalid)
+    - arcsin(1.001) ?= (something invalid)
 - arccos
+    - arccos(-1) ?= pi
+    - arccos(1) ?= pi
+    - arccos(-2) ?= (something invalid)
+    - arccos(1.001) ?= (something invalid) 
 - arctan
+    - arctan(-1) ?= -0.785398163...
+    - arctan(1) ?= 0.785398163...
 - e^x
     - e^1 ?= e
     - e^-2 ?= 1 / e^2
@@ -131,7 +140,7 @@
 ### RAD -> DEG
 
 - The top-left corner should flash "DEG"
-- (4 / 5) * -3 ?=
+- (4 / 5) * -3 ?= -2.4
 
 ### MISC
 
